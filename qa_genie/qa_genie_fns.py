@@ -46,10 +46,15 @@ def extract_qa(chatbot, text: str, num_qn: int = 3, same_conv = False):
     
     j = 1
     
-    while all_qna.find(f"Q{j})")!=-1 and j<num_qn+1:
+    while j<num_qn+1:
+
         q_index = all_qna.find(f"Q{j})") + 4
         a_index = all_qna.find(f"A{j})") + 4
-        next_q_index = all_qna.find(f"Q{j+1})") - 2 if j!=num_qn else -1
+        
+        if all_qna.find(f"Q{j+1})")==-1:
+            next_q_index = -1
+        else:
+            next_q_index = all_qna.find(f"Q{j+1})") - 2 if j<num_qn+1 else -1
         
         questions.append(all_qna[q_index : a_index - 5])
         if(next_q_index==-1):
@@ -63,6 +68,7 @@ def extract_qa(chatbot, text: str, num_qn: int = 3, same_conv = False):
         chatbot.delete_conversation()
     
     return pd.DataFrame({"questions": questions[:num_qn], "answers": answers[:num_qn], "context":[text]*num_qn})
+
 
 
 def extract_qas(chatbot, texts: list, num_qn_each: int = 3, same_conv = True):
