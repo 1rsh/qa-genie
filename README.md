@@ -1,5 +1,7 @@
 # QA Genie
 
+English | [हिंदी](README_hi.md) 
+
 QA Genie is a Python package designed for generating questions and answers from unstructured data.
 
 This package is built using the unofficial API of HuggingChat: [hugchat](https://pypi.org/project/hugchat/). It leverages HuggingChat's capabilities for question and answer generation.
@@ -27,8 +29,8 @@ pip3 install qa_genie
 
 ## Usage
 ```python
-email = "your_email@example.com"
-password = "your_password"
+email = "your_email@example.com" # huggingface account email
+password = "your_password" # huggingface account password
 model = "meta" # use "meta" to use meta-llama/Llama-2-70b-chat-hf or "oasst" to use OpenAssistant/oasst-sft-6-llama-30b
 
 # Initialize chatbot
