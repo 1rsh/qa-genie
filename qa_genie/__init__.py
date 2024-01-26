@@ -1,1 +1,1 @@
-from qa_genie import get_generator, extract_qa, extract_qas
+from qa_genie_fns import get_generator, extract_qa, extract_qas
