@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+qa_genie/__init__.py
+qa_genie/qa_genie.py
+qa_genie.egg-info/PKG-INFO
+qa_genie.egg-info/SOURCES.txt
+qa_genie.egg-info/dependency_links.txt
+qa_genie.egg-info/requires.txt
+qa_genie.egg-info/top_level.txt

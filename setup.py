@@ -1,0 +1,35 @@
+import pathlib
+from setuptools import setup, find_packages
+
+VERSION = '0.0.1'
+DESCRIPTION = 'Generating Question Answer Database from Unstructured Text'
+LONG_DESCRIPTION = pathlib.Path("README.md").read_text()
+
+# Setting up
+setup(
+    name="qa_genie",
+    version=VERSION,
+    author="Irsh Vijayvargia",
+    author_email="<irsh.iitkgp@gmail.com>",
+    description=DESCRIPTION,
+    long_description=LONG_DESCRIPTION,
+    long_description_content_type="text/markdown",
+    license="The Unlicense",
+    project_urls = {
+        "GitHub": "https://github.com/1rsh"
+    },
+    classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Topic :: Utilities",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ],
+    python_requires = ">=3.9",
+    packages=find_packages(),
+    install_requires=['hugchat==0.3.0', 'pandas', 'tqdm'],
+    keywords=['python', 'question generation', 'question answer', 'nlp', 'llm', 'llm for question answering', 'huggingface'],
+    
+)
