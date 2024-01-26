@@ -5,7 +5,7 @@ Summary: Generating Question Answer Database from Unstructured Text
 Author: Irsh Vijayvargia
 Author-email: <irsh.iitkgp@gmail.com>
 License: The Unlicense
-Project-URL: GitHub, https://github.com/1rsh
+Project-URL: GitHub, https://github.com/1rsh/qa-genie
 Keywords: python,question generation,question answer,nlp,llm,llm for question answering,huggingface
 Classifier: Development Status :: 3 - Alpha
 Classifier: Intended Audience :: Developers

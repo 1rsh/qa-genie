@@ -5,7 +5,6 @@ VERSION = '0.0.1'
 DESCRIPTION = 'Generating Question Answer Database from Unstructured Text'
 LONG_DESCRIPTION = pathlib.Path("README.md").read_text()
 
-# Setting up
 setup(
     name="qa_genie",
     version=VERSION,
@@ -16,7 +15,7 @@ setup(
     long_description_content_type="text/markdown",
     license="The Unlicense",
     project_urls = {
-        "GitHub": "https://github.com/1rsh"
+        "GitHub": "https://github.com/1rsh/qa-genie"
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -28,8 +27,9 @@ setup(
         "Operating System :: Microsoft :: Windows",
     ],
     python_requires = ">=3.9",
-    packages=find_packages(),
     install_requires=['hugchat==0.3.0', 'pandas', 'tqdm'],
+    packages=find_packages(),
+    include_package_data=True,
     keywords=['python', 'question generation', 'question answer', 'nlp', 'llm', 'llm for question answering', 'huggingface'],
     
 )
