@@ -1,7 +1,7 @@
 import pathlib
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '1.0.0a'
 DESCRIPTION = 'Generating Question Answer Database from Unstructured Text'
 LONG_DESCRIPTION = pathlib.Path("README.md").read_text()
 

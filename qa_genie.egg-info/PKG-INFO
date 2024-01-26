@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: qa_genie
-Version: 0.0.1
+Version: 1.0.0a0
 Summary: Generating Question Answer Database from Unstructured Text
 Author: Irsh Vijayvargia
 Author-email: <irsh.iitkgp@gmail.com>
