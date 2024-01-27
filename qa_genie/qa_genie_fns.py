@@ -47,7 +47,13 @@ def extract_qa(chatbot, text: str, num_qn: int = 3, same_conv = False):
     j = 1
     
     while j<num_qn+1:
-
+    
+        try:
+            check = all_qna
+        except Exception as e:
+            all_qna = chatbot.query(msg).text
+            
+        
         q_index = all_qna.find(f"Q{j})") + 4
         a_index = all_qna.find(f"A{j})") + 4
         
