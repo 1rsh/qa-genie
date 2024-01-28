@@ -14,7 +14,7 @@ This package is built using the unofficial API of HuggingChat: [hugchat](https:/
 
 > **Note**
 >
-> This package is in its alpha release and more functionality will be added soon!
+> This package is in its alpha release and more functionality will be added soon! <br>
 > **Update 1.0.0a3:** This update enables the user to adjust iteration time. (Solves #1) 
 
 
