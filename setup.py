@@ -27,7 +27,7 @@ setup(
         "Operating System :: Microsoft :: Windows",
     ],
     python_requires = ">=3.9",
-    install_requires=['hugchat==0.3.0', 'pandas', 'tqdm', 'time'],
+    install_requires=['hugchat==0.3.0', 'pandas', 'tqdm'],
     packages=find_packages(),
     include_package_data=True,
     keywords=['python', 'question generation', 'question answer', 'nlp', 'llm', 'llm for question answering', 'huggingface'],
