@@ -1,7 +1,7 @@
 import pathlib
 from setuptools import setup, find_packages
 
-VERSION = '1.0.0a2'
+VERSION = '1.0.0a3'
 DESCRIPTION = 'Generating Question Answer Database from Unstructured Text'
 LONG_DESCRIPTION = pathlib.Path("README.md").read_text()
 
@@ -27,7 +27,7 @@ setup(
         "Operating System :: Microsoft :: Windows",
     ],
     python_requires = ">=3.9",
-    install_requires=['hugchat==0.3.0', 'pandas', 'tqdm'],
+    install_requires=['hugchat==0.3.0', 'pandas', 'tqdm', 'time'],
     packages=find_packages(),
     include_package_data=True,
     keywords=['python', 'question generation', 'question answer', 'nlp', 'llm', 'llm for question answering', 'huggingface'],

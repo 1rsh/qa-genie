@@ -2,6 +2,7 @@ from hugchat import hugchat
 from hugchat.login import Login
 import pandas as pd
 from tqdm.auto import tqdm
+import time
 
 tqdm.pandas()
 
@@ -77,7 +78,7 @@ def extract_qa(chatbot, text: str, num_qn: int = 3, same_conv = False):
 
 
 
-def extract_qas(chatbot, texts: list, num_qn_each: int = 3, same_conv = True):
+def extract_qas(chatbot, texts: list, num_qn_each: int = 3, same_conv = True, time_to_sleep = 2):
     
     if len(texts) == 1:
         print("Only one text found, use extract_qn instead!")
@@ -86,6 +87,7 @@ def extract_qas(chatbot, texts: list, num_qn_each: int = 3, same_conv = True):
     for text in tqdm(texts, "Generating"):
         ds = extract_qa(chatbot, text, num_qn_each, same_conv)
         frames.append(ds)
+        time.sleep(time_to_sleep)
         
     df = pd.concat(frames).reset_index(drop = True)
     
